@@ -3,6 +3,7 @@
 .idea/
 client/.next
 data/
+docker-compose.yml
 config.js
 .DS_Store
 dist/
