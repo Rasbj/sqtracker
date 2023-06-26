@@ -119,8 +119,8 @@ validateConfig(config).then(() => {
   // prevent avoiding a client spoofing this to avoid the limit, we also verify
   // a secret only available to the server
   const limiter = ratelimit({
-    windowMs: 1000 * 60,
-    max: 30,
+    windowMs: 1000 * 30,
+    max: 150,
     keyGenerator: (req) => {
       if (
         req.headers["x-forwarded-for"] &&
